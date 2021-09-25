@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "705562000041",
+    "project_id": "projectgroup-3f72c",
+    "storage_bucket": "projectgroup-3f72c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705562000041:android:291715617ab67efa7e47b8",
+        "android_client_info": {
+          "package_name": "com.drescher_daniel.food_hub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705562000041-hmicbp0vh9csmmrdbikj7f3le5i864hj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAW4MctZ1wQ69U1teeDtSeSxrPOWhtHhiw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705562000041-hmicbp0vh9csmmrdbikj7f3le5i864hj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
