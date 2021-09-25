@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:food_hub/models/User.dart';
 import 'package:food_hub/services/database.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 class AuthService {
 

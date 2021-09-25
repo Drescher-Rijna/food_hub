@@ -26,22 +26,25 @@ class _RegisterState extends State<Register> {
   @override
   Widget build(BuildContext context) {
     return loading ? Loading() : Scaffold(
-      backgroundColor: Colors.grey[100],
+      backgroundColor: Colors.grey[50],
       appBar: AppBar(
-        backgroundColor: Color(0xffa10a02),
+        backgroundColor: Colors.white,
         elevation: 0.0,
-        title: Text('Create account'),
+        title: Text(
+          'Create account',
+          style: TextStyle(color: Colors.grey[900]),
+        ),
         centerTitle: true,
         actions: <Widget>[
           TextButton.icon(
             icon: Icon(
               Icons.person,
-              color: Colors.grey[100],
+              color: Colors.grey[900],
             ),
             label: Text(
               "Sign in",
               style: TextStyle(
-                  color: Colors.grey[100],
+                  color: Colors.grey[900],
               ),
             ),
             onPressed: () {
@@ -65,10 +68,10 @@ class _RegisterState extends State<Register> {
                       fillColor: Colors.white,
                       filled: true,
                       enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Color(0xfff2f2f2), width: 2.0),
+                        borderSide: BorderSide(color: Colors.white, width: 2.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Color(0xffa10a02), width: 2.0),
+                        borderSide: BorderSide(color: Colors.grey[700], width: 2.0),
                       ),
                     ),
                     validator: (val) => val.isEmpty ? 'Enter an email' : null,
@@ -86,7 +89,7 @@ class _RegisterState extends State<Register> {
                         borderSide: BorderSide(color: Colors.white, width: 2.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Color(0xffa10a02), width: 2.0),
+                        borderSide: BorderSide(color: Colors.grey[700], width: 2.0),
                       ),
                     ),
                     validator: (val) => val.isEmpty ? 'Enter an email' : null,
@@ -104,7 +107,7 @@ class _RegisterState extends State<Register> {
                         borderSide: BorderSide(color: Colors.white, width: 2.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Color(0xffa10a02), width: 2.0),
+                        borderSide: BorderSide(color: Colors.grey[700], width: 2.0),
                       ),
                     ),
                     validator: (val) => val.length < 6 ? 'Enter a password +6 characters long' : null,
@@ -123,7 +126,7 @@ class _RegisterState extends State<Register> {
                       ),
                     ),
                     style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(Color(0xffa10a02)),
+                      backgroundColor: MaterialStateProperty.all(Colors.blue[700]),
                       padding: MaterialStateProperty.all(EdgeInsets.symmetric(vertical: 12.0, horizontal: 25.0)),
                     ),
                     onPressed: () async {

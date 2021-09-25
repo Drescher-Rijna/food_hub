@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:food_hub/screens/authenticate/Register.dart';
+import 'package:food_hub/screens/authenticate/SignIn.dart';
 
 class Authenticate extends StatefulWidget {
   @override
@@ -15,9 +17,9 @@ class _AuthenticateState extends State<Authenticate> {
   @override
   Widget build(BuildContext context) {
     if (showSignIn) {
-      return Text("sign in");
+      return SignIn(toggleView: toggleView,);
     } else {
-      return Text("register");
+      return Register(toggleView: toggleView,);
     }
   }
 }
