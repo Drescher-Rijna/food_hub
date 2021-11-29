@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:food_hub/screens/create/Create_post.dart';
 import 'package:food_hub/screens/home/Home.dart';
+import 'package:food_hub/screens/profile/Profile.dart';
 
 class BottomNavigator extends StatefulWidget {
 
@@ -12,6 +14,8 @@ class _BottomNavigatorState extends State<BottomNavigator> {
   int _currentIndex = 0;
   final List<Widget> _children = [
     Home(),
+    Create_Post(),
+    Profile(),
   ];
 
   void onTapBar(int index) {
@@ -38,16 +42,16 @@ class _BottomNavigatorState extends State<BottomNavigator> {
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               activeIcon: Icon(
-                Icons.home,
+                Icons.library_books,
                 color: Colors.blue,
               
               ),
               icon: Icon(
-                Icons.home_outlined,
+                Icons.library_books_outlined,
                 color: Colors.black,
               
               ),
-              label: 'Browse',
+              label: 'Recipies',
             ),
             BottomNavigationBarItem(
               activeIcon: Icon(

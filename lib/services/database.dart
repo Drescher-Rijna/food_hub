@@ -20,8 +20,6 @@ class DatabaseService {
     return await userCollection.doc(uid).set({
       'username': username,
       'email': email,
-      'ActiveID': 'noIDisChoosen',
-      'showAlerts': false,
     });
   }
 
@@ -29,7 +27,12 @@ class DatabaseService {
   UserData _userDataFromSnapshot(DocumentSnapshot snapshot) {
     return UserData(
       uid: snapshot.id,
-      username: snapshot['username'],
+      username: snapshot['username'] ?? "",
+      profilePic: snapshot['profilePic'] ?? "",
+      followers: snapshot['followers'] ?? 0,
+      following: snapshot['following'] ?? 0,
+      posts: snapshot['posts'] ?? 0,
+      description: snapshot['description'] ?? "",
     );
   }
 

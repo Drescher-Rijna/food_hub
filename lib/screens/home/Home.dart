@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_hub/services/auth.dart';
 
 class Home extends StatefulWidget {
 
@@ -7,6 +8,8 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
+  final AuthService _auth = AuthService();
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +32,7 @@ class _HomeState extends State<Home> {
               color: Colors.grey[900],
             ),
             onPressed: () async {
-              
+              await _auth.signOut();
             },
           ),
         ],
